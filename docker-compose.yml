@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    container_name: advent23_db
+    image: "postgres:16-alpine"
+    ports:
+      - "33923:5432"
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: advent-pw
+      POSTGRES_DB: advent
+    cap_add:
+      - SYS_NICE
