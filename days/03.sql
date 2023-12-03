@@ -95,3 +95,4 @@ DROP TABLE IF EXISTS tmp_input;
 DROP TABLE IF EXISTS tmp_symbol_position;
 DROP TABLE IF EXISTS tmp_part_number;
 DROP AGGREGATE IF EXISTS mul(numeric);
+DROP FUNCTION IF EXISTS find_matches_and_positions(column_text text, regex_pattern text);
